@@ -15,9 +15,12 @@ const square9 = document.querySelector("#box9")
 //FUNCTION TO ALTERNATE COLOR CHANGE
 //state is the state of the switch between red and blue
 let state = false
+//triggered is whether or not a particular function has happened before
+let triggered = false
 //y is the input for which square is being clicked/changed in color
 let y
 
+//THE FUNCTION TO ALTERNATE AND CHANGE THE SQUARE COLORS
 function colorClick(y) {
     if (state == false) {
         //make them red
@@ -46,7 +49,7 @@ const blueClick = function(x) {
     x.classList.add('blue')
 }
 //FUNCTION TO ALTERNATE COLOR TEST LISTENER
-square1.addEventListener("click", () => {colorClick(square1), y})
+square1.addEventListener("click", () => {colorClick(square1)})
 square2.addEventListener("click", () => {colorClick(square2)})
 square3.addEventListener("click", () => {colorClick(square3)})
 square4.addEventListener("click", () => {colorClick(square4)})
