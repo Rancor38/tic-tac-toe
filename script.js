@@ -12,14 +12,36 @@ const square7 = document.querySelector("#box7")
 const square8 = document.querySelector("#box8")
 const square9 = document.querySelector("#box9")
 
+//FUNCTION TO ALTERNATE COLOR CHANGE
+
+
+//FUNCTION TO CHANGE COLOR TO RED
+const redClick = function(x) {
+    x.classList.add('red')
+}
+//FUNCTION TO CHANGE COLOR TO BLUE
+const blueClick = function(x) {
+    x.classList.add('blue')
+}
 
 //EVENT LISTENERS
-square1.addEventListener("click", () => {console.log("You clicked me!")})
-square2.addEventListener("click", () => {console.log("You clicked me!")})
-square3.addEventListener("click", () => {console.log("You clicked me!")})
-square4.addEventListener("click", () => {console.log("You clicked me!")})
-square5.addEventListener("click", () => {console.log("You clicked me!")})
-square6.addEventListener("click", () => {console.log("You clicked me!")})
-square7.addEventListener("click", () => {console.log("You clicked me!")})
-square8.addEventListener("click", () => {console.log("You clicked me!")})
-square9.addEventListener("click", () => {console.log("You clicked me!")})
+//MAKE THEM RED
+square1.addEventListener("click", () => {redClick(square1)})
+square2.addEventListener("click", () => {redClick(square2)})
+square3.addEventListener("click", () => {redClick(square3)})
+square4.addEventListener("click", () => {redClick(square4)})
+square5.addEventListener("click", () => {redClick(square5)})
+square6.addEventListener("click", () => {redClick(square6)})
+square7.addEventListener("click", () => {redClick(square7)})
+square8.addEventListener("click", () => {redClick(square8)})
+square9.addEventListener("click", () => {redClick(square9)})
+//MAKE THEM BLUE
+square1.addEventListener("click", () => {blueClick(square1)})
+square2.addEventListener("click", () => {blueClick(square2)})
+square3.addEventListener("click", () => {blueClick(square3)})
+square4.addEventListener("click", () => {blueClick(square4)})
+square5.addEventListener("click", () => {blueClick(square5)})
+square6.addEventListener("click", () => {blueClick(square6)})
+square7.addEventListener("click", () => {blueClick(square7)})
+square8.addEventListener("click", () => {blueClick(square8)})
+square9.addEventListener("click", () => {blueClick(square9)})
