@@ -2,34 +2,25 @@ body {
     background: rgb(119, 119, 119);
 }
 .grid-container {
-    background: green;
+    background: black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 30vw;
-    height:30vw;
+    width: 31vw;
+    height:31vw;
 }
-.square1 {
-    background: purple;
+.square {
+    background: rgb(151, 147, 151);
     width: 10vw;
     height: 10vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
-.square2 {
-    background: red;
-    width: 10vw;
-    height: 10vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.red {
+background: red;
 }
-.square3 {
-    background: blue;
-    width: 10vw;
-    height: 10vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.blue {
+background: blue;
 }
