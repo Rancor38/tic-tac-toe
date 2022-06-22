@@ -1,3 +1,14 @@
 body {
-    background: red;
+    background: rgb(119, 119, 119);
+}
+.grid-container {
+    background: green;
+    display: flex;
+    width: 100vw;
+    height:100vw;
+}
+.square {
+    background: purple;
+    width: 100px;
+    height: 100px;
 }
