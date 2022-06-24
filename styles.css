@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
 
 body {
-    background: rgb(119, 119, 119);
+    background: gray;
     font-family: 'Stalinist One', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .grid-container {
     background: black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 31vw;
-    height:31vw;
+    width: 35vw;
+    height:35vw;
+    margin: auto;
+    box-shadow: 1vw 1vw 1vw black;
+    border-radius: 1vw;
 }
 .square {
     background: whitesmoke;
@@ -24,6 +24,10 @@ body {
     flex-direction: column;
     text-align: center;
     cursor: pointer;
+    border-style: inset;
+    border-width: .5vh;
+    border-color: rgb(106, 106, 106);
+    border-radius: 1vw;
 }
 .red {
 background: rgba(255, 255, 255, 0.90);
@@ -36,7 +40,7 @@ background: rgba(255, 255, 255, 0.90);
     right: 0;
     content: "X";
     font-size: 50px; 
-    color: red
+    color: red;
     line-height: 100px;
     text-align: center;
 }
@@ -51,8 +55,19 @@ background: rgba(255, 255, 255, 0.90);
     right: 0;
     content: "O";
     font-size: 50px;
-    
     color: rgb(0, 0, 210);
     line-height: 100px;
     text-align: center;
+}
+
+#reset {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 18px;
+    background: rgb(201, 200, 201);
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1vw 1vw 1vw black;
 }

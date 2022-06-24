@@ -1,6 +1,3 @@
-//Sanity Check
-// console.log("Hallo")
-
 //CONST ELEMENTS
 const square1 = document.querySelector("#box1")
 const square2 = document.querySelector("#box2")
@@ -11,6 +8,7 @@ const square6 = document.querySelector("#box6")
 const square7 = document.querySelector("#box7")
 const square8 = document.querySelector("#box8")
 const square9 = document.querySelector("#box9")
+const resetButton = document.querySelector("#reset")
 
 //FUNCTION TO ALTERNATE COLOR CHANGE
 //state is the state of the switch between red and blue
@@ -60,3 +58,9 @@ square6.addEventListener("click", () => {colorClick(square6)})
 square7.addEventListener("click", () => {colorClick(square7)})
 square8.addEventListener("click", () => {colorClick(square8)})
 square9.addEventListener("click", () => {colorClick(square9)})
+
+
+//ADD RESET FUNCTION
+
+//ADD LISTENER FOR RESET BUTTON
+resetButton.addEventListener("click", () => {window.location.reload(true)})
