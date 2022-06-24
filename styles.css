@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
 body {
     background: rgb(119, 119, 119);
+    font-family: 'Stalinist One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .grid-container {
     background: black;
@@ -10,7 +16,7 @@ body {
     height:31vw;
 }
 .square {
-    background: rgb(151, 147, 151);
+    background: whitesmoke;
     width: 10vw;
     height: 10vw;
     display: flex;
@@ -20,8 +26,33 @@ body {
     cursor: pointer;
 }
 .red {
-background: red;
+background: rgba(255, 255, 255, 0.90);
+}
+.red:after {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "X";
+    font-size: 50px; 
+    color: red
+    line-height: 100px;
+    text-align: center;
 }
 .blue {
-background: blue;
+background: rgba(255, 255, 255, 0.90);
+}
+.blue:after {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "O";
+    font-size: 50px;
+    
+    color: rgb(0, 0, 210);
+    line-height: 100px;
+    text-align: center;
 }
