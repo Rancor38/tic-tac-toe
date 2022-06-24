@@ -22,18 +22,20 @@ let y
 
 //THE FUNCTION TO ALTERNATE AND CHANGE THE SQUARE COLORS
 function colorClick(y) {
-    if (state == false) {
+    if (state === false) {
         //make them red
         console.log("red")
         y.classList.add('red')
+        y.classList.remove('blue')
         //and flip the switch
         state = true
         return
     }
-    if (state == true) {
+    else {
         //make them blue
         console.log("blue")
         y.classList.add('blue')
+        y.classList.remove('red')
         //and flip the switch
         state = false
         return
@@ -41,13 +43,13 @@ function colorClick(y) {
 }
 
 //FUNCTION TO CHANGE COLOR TO RED
-const redClick = function(x) {
-    x.classList.add('red')
-}
+// const redClick = function(x) {
+//     x.classList.add('red')
+// }
 //FUNCTION TO CHANGE COLOR TO BLUE
-const blueClick = function(x) {
-    x.classList.add('blue')
-}
+// const blueClick = function(x) {
+//     x.classList.add('blue')
+// }
 //FUNCTION TO ALTERNATE COLOR TEST LISTENER
 square1.addEventListener("click", () => {colorClick(square1)})
 square2.addEventListener("click", () => {colorClick(square2)})

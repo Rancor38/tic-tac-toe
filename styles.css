@@ -17,6 +17,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    cursor: pointer;
 }
 .red {
 background: red;
