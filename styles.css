@@ -4,6 +4,9 @@ body {
     background: gray;
     font-family: 'Stalinist One', cursive;
 }
+h1 {
+    text-align: center;
+}
 .grid-container {
     background: black;
     display: flex;
