@@ -59,7 +59,6 @@ square7.addEventListener("click", () => {colorClick(square7)})
 square8.addEventListener("click", () => {colorClick(square8)})
 square9.addEventListener("click", () => {colorClick(square9)})
 
-
 //ADD RESET FUNCTION
 resetFunction = () => {
     window.location.reload(true)  
@@ -69,20 +68,14 @@ resetButton.addEventListener("click", resetFunction)
 
 // OVERLAY FUNCTIONS FOR DECLARE VICTORY
 // RED
-function on() {
+onRed = () => {
     document.getElementById("overlay__red").style.display = "block";
   }
-  
-  function off() {
-    document.getElementById("overlay__red").style.display = "none";
-  }
   //BLUE
-  function on() {
+  function onBlue() {
     document.getElementById("overlay__blue").style.display = "block";
   }
-  
-  function off() {
-    document.getElementById("overlay__blue").style.display = "none";
-  }
 
-// ADD A MUTATIONOBSERVER TO LISTEN FOR CHANGES IN CSS, AND IF THEY LINE UP, DECLARE VICTORY
+//LISTEN FOR CHANGES IN CSS, AND IF THEY LINE UP, DECLARE VICTORY
+
+square1.addEventListener("click", () => {onRed()})
