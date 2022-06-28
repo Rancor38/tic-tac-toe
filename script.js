@@ -69,7 +69,10 @@ resetButton.addEventListener("click", resetFunction)
 // OVERLAY FUNCTIONS FOR DECLARE VICTORY
 // RED
 onRed = () => {
+    if (square2.classList.contains('red')) {
     document.getElementById("overlay__red").style.display = "block";
+    }
+    else {}
   }
   //BLUE
   function onBlue() {
