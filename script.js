@@ -61,6 +61,28 @@ square9.addEventListener("click", () => {colorClick(square9)})
 
 
 //ADD RESET FUNCTION
-
+resetFunction = () => {
+    window.location.reload(true)  
+}
 //ADD LISTENER FOR RESET BUTTON
-resetButton.addEventListener("click", () => {window.location.reload(true)})
+resetButton.addEventListener("click", resetFunction)
+
+// OVERLAY FUNCTIONS FOR DECLARE VICTORY
+// RED
+function on() {
+    document.getElementById("overlay__red").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay__red").style.display = "none";
+  }
+  //BLUE
+  function on() {
+    document.getElementById("overlay__blue").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay__blue").style.display = "none";
+  }
+
+// ADD A MUTATIONOBSERVER TO LISTEN FOR CHANGES IN CSS, AND IF THEY LINE UP, DECLARE VICTORY

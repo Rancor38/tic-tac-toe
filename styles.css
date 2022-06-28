@@ -42,7 +42,7 @@ background: rgba(255, 255, 255, 0.90);
     left: 0;
     right: 0;
     content: "X";
-    font-size: 8vw; 
+    font-size: 6vw; 
     color: red;
     line-height: 100px;
     text-align: center;
@@ -57,7 +57,7 @@ background: rgba(255, 255, 255, 0.90);
     left: 0;
     right: 0;
     content: "O";
-    font-size: 8vw;
+    font-size: 6vw;
     color: rgb(0, 0, 210);
     line-height: 100px;
     text-align: center;
@@ -74,3 +74,41 @@ background: rgba(255, 255, 255, 0.90);
     cursor: pointer;
     box-shadow: 1vw 1vw 1vw black;
 }
+
+/* Classes for declareVictory */
+#overlay__red {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #overlay__blue {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
