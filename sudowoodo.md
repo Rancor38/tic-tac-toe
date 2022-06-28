@@ -25,3 +25,5 @@ If box
 1, 5, and 9
 3, 5, and 7
 delcareVictory
+
+Look at else/if of the 'draw' function.

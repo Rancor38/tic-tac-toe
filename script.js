@@ -69,7 +69,7 @@ resetButton.addEventListener("click", resetFunction)
 // OVERLAY FUNCTIONS FOR DECLARE VICTORY IF CLASSLIST COMBINATION IS CORRECT
 // RED
 onRed = () => {
-    if /* 1, 2, 3*/ (square1.classList.contains('red') && square1.classList.contains('red') && square3.classList.contains('red')) {
+    if /* 1, 2, 3*/ (square1.classList.contains('red') && square2.classList.contains('red') && square3.classList.contains('red')) {
     document.getElementById("overlay__red").style.display = "block";
     }
     else if/*4, 5, 6*/ (square4.classList.contains('red') && square5.classList.contains('red') && square6.classList.contains('red')) {
@@ -93,11 +93,14 @@ onRed = () => {
     else if/*3, 5, 7*/(square3.classList.contains('red') && square5.classList.contains('red') && square7.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
         }
+        // else if/*all contain red or blue*/(square1.classList.contains('blue', 'red') && square2.classList.contains('blue', 'red') && square3.classList.contains('blue', 'red') && square4.classList.contains('blue', 'red') && square5.classList.contains('blue', 'red') && square6.classList.contains('blue', 'red') && square7.classList.contains('blue', 'red') && square8.classList.contains('blue', 'red') && square9.classList.contains('blue', 'red')) {
+        //     document.getElementById("overlay__draw").style.display = "block";
+        //     }
     else {}
   }
   //BLUE
   onblue = () => {
-    if /* 1, 2, 3*/ (square1.classList.contains('blue') && square1.classList.contains('blue') && square3.classList.contains('blue')) {
+    if /* 1, 2, 3*/ (square1.classList.contains('blue') && square2.classList.contains('blue') && square3.classList.contains('blue')) {
     document.getElementById("overlay__blue").style.display = "block";
     }
     else if/*4, 5, 6*/ (square4.classList.contains('blue') && square5.classList.contains('blue') && square6.classList.contains('blue')) {
@@ -121,7 +124,6 @@ onRed = () => {
     else if/*3, 5, 7*/(square3.classList.contains('blue') && square5.classList.contains('blue') && square7.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
         }
-    else if/*all contain red or blue*/
     else {}
   } 
 //LISTEN FOR CHANGES IN CSS CLASS-LIST, AND IF THEY LINE UP, DECLARE VICTORY
