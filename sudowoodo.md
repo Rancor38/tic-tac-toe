@@ -18,6 +18,7 @@ If box
 1, 2, and 3
 4, 5, and 6
 7, 8, and 9
+
 1, 4, and 7
 2, 5, and 8
 3, 6, and 9

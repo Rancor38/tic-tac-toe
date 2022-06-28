@@ -66,19 +66,82 @@ resetFunction = () => {
 //ADD LISTENER FOR RESET BUTTON
 resetButton.addEventListener("click", resetFunction)
 
-// OVERLAY FUNCTIONS FOR DECLARE VICTORY
+// OVERLAY FUNCTIONS FOR DECLARE VICTORY IF CLASSLIST COMBINATION IS CORRECT
 // RED
 onRed = () => {
-    if (square2.classList.contains('red')) {
+    if /* 1, 2, 3*/ (square1.classList.contains('red') && square1.classList.contains('red') && square3.classList.contains('red')) {
     document.getElementById("overlay__red").style.display = "block";
     }
+    else if/*4, 5, 6*/ (square4.classList.contains('red') && square5.classList.contains('red') && square6.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*7, 8, 9*/ (square7.classList.contains('red') && square8.classList.contains('red') && square9.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*1, 4, 7*/ (square1.classList.contains('red') && square4.classList.contains('red') && square7.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*2, 5, 8*/ (square2.classList.contains('red') && square5.classList.contains('red') && square8.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*3, 6, 9*/(square3.classList.contains('red') && square6.classList.contains('red') && square9.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*1, 5, 9*/(square1.classList.contains('red') && square5.classList.contains('red') && square9.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
+    else if/*3, 5, 7*/(square3.classList.contains('red') && square5.classList.contains('red') && square7.classList.contains('red')) {
+        document.getElementById("overlay__red").style.display = "block";
+        }
     else {}
   }
   //BLUE
-  function onBlue() {
+  onblue = () => {
+    if /* 1, 2, 3*/ (square1.classList.contains('blue') && square1.classList.contains('blue') && square3.classList.contains('blue')) {
     document.getElementById("overlay__blue").style.display = "block";
-  }
-
-//LISTEN FOR CHANGES IN CSS, AND IF THEY LINE UP, DECLARE VICTORY
-
+    }
+    else if/*4, 5, 6*/ (square4.classList.contains('blue') && square5.classList.contains('blue') && square6.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*7, 8, 9*/ (square7.classList.contains('blue') && square8.classList.contains('blue') && square9.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*1, 4, 7*/ (square1.classList.contains('blue') && square4.classList.contains('blue') && square7.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*2, 5, 8*/ (square2.classList.contains('blue') && square5.classList.contains('blue') && square8.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*3, 6, 9*/(square3.classList.contains('blue') && square6.classList.contains('blue') && square9.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*1, 5, 9*/(square1.classList.contains('blue') && square5.classList.contains('blue') && square9.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*3, 5, 7*/(square3.classList.contains('blue') && square5.classList.contains('blue') && square7.classList.contains('blue')) {
+        document.getElementById("overlay__blue").style.display = "block";
+        }
+    else if/*all contain red or blue*/
+    else {}
+  } 
+//LISTEN FOR CHANGES IN CSS CLASS-LIST, AND IF THEY LINE UP, DECLARE VICTORY
+// RED
 square1.addEventListener("click", () => {onRed()})
+square2.addEventListener("click", () => {onRed()})
+square3.addEventListener("click", () => {onRed()})
+square4.addEventListener("click", () => {onRed()})
+square5.addEventListener("click", () => {onRed()})
+square6.addEventListener("click", () => {onRed()})
+square7.addEventListener("click", () => {onRed()})
+square8.addEventListener("click", () => {onRed()})
+square9.addEventListener("click", () => {onRed()})
+// BLUE
+square1.addEventListener("click", () => {onblue()})
+square2.addEventListener("click", () => {onblue()})
+square3.addEventListener("click", () => {onblue()})
+square4.addEventListener("click", () => {onblue()})
+square5.addEventListener("click", () => {onblue()})
+square6.addEventListener("click", () => {onblue()})
+square7.addEventListener("click", () => {onblue()})
+square8.addEventListener("click", () => {onblue()})
+square9.addEventListener("click", () => {onblue()})
