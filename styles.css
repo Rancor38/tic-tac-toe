@@ -103,7 +103,7 @@ background: rgba(255, 255, 255, 0.90);
     cursor: pointer;
   }
   /* Class for draw */
-  /* #overlay__draw {
+  #overlay__draw {
     position: fixed;
     display: none;
     width: 100%;
@@ -115,7 +115,7 @@ background: rgba(255, 255, 255, 0.90);
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
-  } */
+  }
 
   #text{
     position: absolute;
