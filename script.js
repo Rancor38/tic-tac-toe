@@ -61,7 +61,9 @@ square9.addEventListener("click", () => {colorClick(square9)})
 
 //ADD RESET FUNCTION
 resetFunction = () => {
-    window.location.reload(true)  
+    dooty.play()
+    setTimeout(function(){window.location.reload(true)}, 0700)
+    
 }
 //ADD LISTENER FOR RESET BUTTON
 resetButton.addEventListener("click", resetFunction)
@@ -71,27 +73,35 @@ resetButton.addEventListener("click", resetFunction)
 onRed = () => {
     if /* 1, 2, 3*/ (square1.classList.contains('red') && square2.classList.contains('red') && square3.classList.contains('red')) {
     document.getElementById("overlay__red").style.display = "block";
+    {ditty.play()}
     }
     else if/*4, 5, 6*/ (square4.classList.contains('red') && square5.classList.contains('red') && square6.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*7, 8, 9*/ (square7.classList.contains('red') && square8.classList.contains('red') && square9.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*1, 4, 7*/ (square1.classList.contains('red') && square4.classList.contains('red') && square7.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*2, 5, 8*/ (square2.classList.contains('red') && square5.classList.contains('red') && square8.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*3, 6, 9*/(square3.classList.contains('red') && square6.classList.contains('red') && square9.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*1, 5, 9*/(square1.classList.contains('red') && square5.classList.contains('red') && square9.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else if/*3, 5, 7*/(square3.classList.contains('red') && square5.classList.contains('red') && square7.classList.contains('red')) {
         document.getElementById("overlay__red").style.display = "block";
+        {ditty.play()}
         }
     else {}
   }
@@ -99,27 +109,35 @@ onRed = () => {
   onBlue = () => {
     if /* 1, 2, 3*/ (square1.classList.contains('blue') && square2.classList.contains('blue') && square3.classList.contains('blue')) {
     document.getElementById("overlay__blue").style.display = "block";
+    {ditty.play()}
     }
     else if/*4, 5, 6*/ (square4.classList.contains('blue') && square5.classList.contains('blue') && square6.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*7, 8, 9*/ (square7.classList.contains('blue') && square8.classList.contains('blue') && square9.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*1, 4, 7*/ (square1.classList.contains('blue') && square4.classList.contains('blue') && square7.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*2, 5, 8*/ (square2.classList.contains('blue') && square5.classList.contains('blue') && square8.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*3, 6, 9*/(square3.classList.contains('blue') && square6.classList.contains('blue') && square9.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*1, 5, 9*/(square1.classList.contains('blue') && square5.classList.contains('blue') && square9.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else if/*3, 5, 7*/(square3.classList.contains('blue') && square5.classList.contains('blue') && square7.classList.contains('blue')) {
         document.getElementById("overlay__blue").style.display = "block";
+        {ditty.play()}
         }
     else {}
   } 
@@ -127,11 +145,20 @@ onRed = () => {
 onDraw = () => {
     if (square1.classList.contains('draw') && square2.classList.contains('draw') && square3.classList.contains('draw') && square4.classList.contains('draw') && square5.classList.contains('draw') && square6.classList.contains('draw') && square7.classList.contains('draw') && square8.classList.contains('draw') && square9.classList.contains('draw')) {
         document.getElementById("overlay__draw").style.display = "block";
+        {boing.play()}
     }
     else {}
 }
 // PLAY AUDIO FUNCTION
+// FOR CLICKS ON BOXES
 let popity = new Audio('popity.wav')
+//FOR WIN
+let ditty = new Audio('ditty.wav')
+//FOR DRAW
+let boing = new Audio('boing.wav')
+//FOR RESET
+let dooty = new Audio('dooty.wav')
+
 
 //LISTEN FOR CHANGES IN CSS CLASS-LIST, AND IF THEY LINE UP, DECLARE VICTORY
 // RED
