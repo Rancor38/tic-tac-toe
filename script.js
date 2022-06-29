@@ -130,6 +130,8 @@ onDraw = () => {
     }
     else {}
 }
+// PLAY AUDIO FUNCTION
+let popity = new Audio('popity.wav')
 
 //LISTEN FOR CHANGES IN CSS CLASS-LIST, AND IF THEY LINE UP, DECLARE VICTORY
 // RED
@@ -162,3 +164,13 @@ square6.addEventListener("click", () => {onDraw()})
 square7.addEventListener("click", () => {onDraw()})
 square8.addEventListener("click", () => {onDraw()})
 square9.addEventListener("click", () => {onDraw()})
+// SFX
+square1.addEventListener("click", () => {popity.play()})
+square2.addEventListener("click", () => {popity.play()})
+square3.addEventListener("click", () => {popity.play()})
+square4.addEventListener("click", () => {popity.play()})
+square5.addEventListener("click", () => {popity.play()})
+square6.addEventListener("click", () => {popity.play()})
+square7.addEventListener("click", () => {popity.play()})
+square8.addEventListener("click", () => {popity.play()})
+square9.addEventListener("click", () => {popity.play()})
